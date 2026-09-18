@@ -1,0 +1,38 @@
+*{box-sizing:border-box}body{margin:0;background:#f5f5f7;color:#171717;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif}.wrap{max-width:440px;margin:auto;padding:18px 16px 36px}.hero,.card{background:#fff;border-radius:22px;padding:16px;margin-bottom:14px;box-shadow:0 2px 12px #00000010}.hero{text-align:center;padding-top:12px}.hero>img{display:block;width:190px;max-height:96px;object-fit:contain;margin:0 auto}.rule{height:1px;background:#eee;margin:9px 0 8px}.hero h1{font-size:22px;margin:0;font-weight:900}.hero p{font-size:13px;margin:4px 0 0;color:#555}.top{display:flex;justify-content:space-between;align-items:center}.top small{display:block;color:#aaa;font-size:10px}.top b{font:700 13px monospace}.top strong{background:#f3f3f3;border-radius:18px;padding:7px 12px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:16px}.stamp{position:relative;aspect-ratio:1;border:1px dashed #d6d6d6;background:#fff;border-radius:16px;padding:9px;display:flex;align-items:center;justify-content:center}.stamp img{width:100%;height:100%;object-fit:contain}.stamp.got{border:2px solid #e60012;box-shadow:0 4px 10px #e6001218}.check{position:absolute;right:5px;top:5px;width:25px;height:25px;background:#e60012;color:#fff;border-radius:50%;display:grid;place-items:center;font-weight:900}.status{margin-top:16px;background:#f7f7f7;border-radius:16px;padding:14px;text-align:center}.status b{font-size:18px}.done{color:#07844c}.prize{margin-bottom:14px;padding:18px;border-radius:22px;color:#fff;background:linear-gradient(135deg,#d90012,#111)}.photo{height:120px;margin:14px 0;border:1px solid #ffffff55;background:#ffffff16;border-radius:16px;display:grid;place-items:center;font-size:13px}.prize h2{font-size:19px;margin:0}summary{font-weight:800;cursor:pointer}li{font-size:12px;margin:7px 0;line-height:1.5}.demo h2,.staff h2{font-size:15px;margin:0 0 10px}.buttons{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.buttons button,.staff button{border:1px solid #ddd;background:#fff;border-radius:13px;padding:10px 5px;font-size:11px;font-weight:700}.staff button{width:100%;background:#000;color:#fff;border:0}.staff button:disabled{background:#ddd}.reset{display:block;margin:18px auto;border:0;background:none;color:#999}.foot{text-align:center;color:#aaa;font-size:10px}#toast{display:none;position:fixed;bottom:18px;left:50%;transform:translateX(-50%);width:calc(100% - 32px);max-width:400px;background:#000;color:#fff;padding:13px;border-radius:16px;text-align:center;font-weight:700}.photo img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+/* Mobile stability refinements */
+.wrap{width:100%;overflow-x:hidden;padding-bottom:calc(88px + env(safe-area-inset-bottom))}
+.card{min-width:0}
+.grid{width:100%;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.stamp{min-width:0;width:100%;padding:7px;overflow:visible}
+.stamp img{max-width:100%;max-height:100%;object-fit:contain}
+.check{right:4px;top:4px;width:22px;height:22px;font-size:14px}
+.stamp:nth-child(3) img{transform:scale(.92)}
+.stamp:nth-child(6) img{transform:scale(.94)}
+.status{position:relative;z-index:1;margin-top:14px}
+@media(max-width:390px){
+ .wrap{padding-left:10px;padding-right:10px}
+ .hero,.card{border-radius:18px}
+ .card{padding:13px}
+ .grid{gap:6px;margin-top:13px}
+ .stamp{padding:6px;border-radius:14px}
+ .check{right:3px;top:3px;width:20px;height:20px;font-size:13px}
+ .top strong{padding:6px 10px;font-size:13px}
+ .status{padding:12px 8px}
+ .status b{font-size:16px}
+}
+@media(max-width:340px){
+ .wrap{padding-left:7px;padding-right:7px}
+ .card{padding:10px}
+ .grid{gap:4px}
+ .stamp{padding:5px;border-radius:12px}
+ .check{width:18px;height:18px;font-size:12px}
+}
+
+/* v4.9: Melt Interface slightly larger only */
+.stamp:nth-child(8){overflow:hidden;padding:1px}
+.stamp:nth-child(8) img{width:172%;max-width:none;height:auto;max-height:none;object-fit:contain;transform:scale(1.16);transform-origin:center}
+.privacy{text-align:center;color:#999;font-size:10px;margin:12px 0 90px}.exchange-link{display:inline-block;margin-top:12px;background:#000;color:#fff;text-decoration:none;padding:12px 16px;border-radius:14px;font-weight:800}.staff-confirm{display:block;width:100%;margin-top:16px;border:0;border-radius:14px;padding:15px;background:#000;color:#fff;font-weight:800}.staff-confirm:disabled{background:#ddd;color:#888}.staff-note{font-size:11px;color:#777;line-height:1.6;text-align:center}
+
+/* v5.7 Prize image card cleanup: remove the faint inner outline completely. */
+.photo{border:0!important;outline:0!important;box-shadow:none!important;background:#fff!important;border-radius:14px!important;overflow:hidden!important;padding:18px 24px!important}
+.photo img{border:0!important;outline:0!important;box-shadow:none!important;border-radius:0!important;background:#fff!important}
