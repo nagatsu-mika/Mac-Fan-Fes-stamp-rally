@@ -39,3 +39,6 @@
 .grid .stamp:nth-child(8) img{width:82%;height:82%;margin:auto}
 @media(max-width:390px){.grid .stamp{padding:6px}.grid .stamp:nth-child(8) img{width:80%;height:80%}}
 @media(max-width:340px){.grid .stamp{padding:5px}.grid .stamp:nth-child(8) img{width:78%;height:78%}}
+
+/* v5.5 Complete Prize: dark navy background */
+.prize{background:linear-gradient(135deg,#07182d 0%,#0b2748 55%,#06111f 100%)}
