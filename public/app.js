@@ -29,7 +29,7 @@ function render(){
  $('pid').textContent=pid; $('count').textContent=stamps.length+' / 9';
  $('stamps').innerHTML=BOOTHS.map(b=>`<div class="stamp ${stamps.includes(b.id)?'got':''}"><img src="${b.logo}" alt="${b.name}">${stamps.includes(b.id)?'<span class="check">✓</span>':''}</div>`).join('');
  if(exchanged)$('status').innerHTML='<b class="done">✓ 景品交換済み</b><br><small>交換日時：'+exchangedAt+'</small>';
- else if(stamps.length===9)$('status').innerHTML='<b>🎉 9ブース COMPLETE!</b><br><small>景品交換所でこの画面をスタッフに見せてください。</small><br><a class="exchange-link" href="/staff.html?id='+encodeURIComponent(pid)+'">景品交換用画面を表示</a>';
+ else if(stamps.length===9)$('status').innerHTML='<b>🎉 9ブース COMPLETE!</b><br><small>受付でこの画面をスタッフに見せてください。</small><br><a class="exchange-link" href="/staff.html?id='+encodeURIComponent(pid)+'">景品交換用画面を表示</a>';
  else $('status').innerHTML='<b>あと '+(9-stamps.length)+' ブース！</b><br><small>全9ブースのQRを読み込むと景品交換できます。</small>';
 }
 render(); sync();
