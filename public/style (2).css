@@ -29,13 +29,12 @@
 }
 
 /* v4.9: Melt Interface slightly larger only */
+.stamp:nth-child(8){overflow:hidden;padding:1px}
+.stamp:nth-child(8) img{width:172%;max-width:none;height:auto;max-height:none;object-fit:contain;transform:scale(1.16);transform-origin:center}
 .privacy{text-align:center;color:#999;font-size:10px;margin:12px 0 90px}.exchange-link{display:inline-block;margin-top:12px;background:#000;color:#fff;text-decoration:none;padding:12px 16px;border-radius:14px;font-weight:800}.staff-confirm{display:block;width:100%;margin-top:16px;border:0;border-radius:14px;padding:15px;background:#000;color:#fff;font-weight:800}.staff-confirm:disabled{background:#ddd;color:#888}.staff-note{font-size:11px;color:#777;line-height:1.6;text-align:center}
 
-/* v5.4 mobile stamp geometry fix */
-.grid{align-items:stretch}
-.grid .stamp{box-sizing:border-box;aspect-ratio:1/1;width:100%;min-width:0;height:auto;min-height:0;overflow:hidden;padding:7px}
-.grid .stamp img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;transform:none}
-/* Melt: frame remains identical; only the logo content is reduced inside the same square. */
-.grid .stamp:nth-child(8) img{width:82%;height:82%;margin:auto}
-@media(max-width:390px){.grid .stamp{padding:6px}.grid .stamp:nth-child(8) img{width:80%;height:80%}}
-@media(max-width:340px){.grid .stamp{padding:5px}.grid .stamp:nth-child(8) img{width:78%;height:78%}}
+/* v5.6 Prize logo display fix: keep the full Mac Fan logo visible with breathing room. */
+.photo{height:120px;padding:18px 24px;background:#fff;overflow:hidden}
+.photo img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;object-position:center}
+@media(max-width:390px){.photo{height:116px;padding:18px 22px}}
+@media(max-width:340px){.photo{height:108px;padding:16px 18px}}
