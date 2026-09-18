@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#000"><title>Mac Fan Fes | Stamp Rally</title><link rel="stylesheet" href="style.css"></head>
+<body><main class="wrap">
+<header class="hero"><small>◉ MAC FAN FES</small><h1>STAMP RALLY</h1><p>全9ブースを回って、景品をGETしよう！</p></header>
+<section class="card"><div class="top"><div><small>YOUR ID</small><b id="pid">...</b></div><strong id="count">0 / 9</strong></div><div id="stamps" class="grid"></div><div id="status" class="status"></div></section>
+<section class="prize"><small>🎁 COMPLETE PRIZE</small><div class="photo"><img id="prizeImage" src="prize.jpg" alt="景品写真" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><div class="placeholder">景品写真をここに掲載<br><span>prize.jpg に差し替えできます</span></div></div><h2>全9ブース達成で景品GET!</h2><p>景品名や「先着○名様」などの案内文をここに掲載できます。</p></section>
+<section class="card"><details><summary>ⓘ 注意事項</summary><ul><li>景品交換には全9ブースのスタンプ取得が必要です。</li><li>スタンプは1ブースにつき1回のみ取得できます。</li><li>景品はなくなり次第終了となる場合があります。</li><li>景品交換後は「景品交換済み」と表示されます。</li><li>ブラウザのデータ削除や別ブラウザの利用により取得状況を引き継げない場合があります。</li></ul></details></section>
+<section class="card demo"><h2>QR読み取りデモ</h2><p>本番では各ブースのQRを読みます。テスト時は下のボタンでも確認できます。</p><div id="buttons" class="buttons"></div></section>
+<section id="staff" class="card staff"><h2>運営テスト</h2><p>9ブース達成後、景品を渡してから押してください。</p><button id="exchange">景品交換を確定</button></section>
+<button id="reset" class="reset">↻ デモをリセット</button><p class="foot">PROTOTYPE v3 · QR URL対応版<br>現在は端末内保存。中央集計は次工程で追加します。</p></main><div id="toast"></div><script src="app.js"></script></body></html>
